@@ -1,6 +1,7 @@
 import React from "react";
 import { Phone, Home } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
+import logo from "../assets/icons/logo.png";
 
 const Footer = ({ contactRef }) => {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ const Footer = ({ contactRef }) => {
         <div>
           <div className="flex items-center space-x-3">
             <img
-              src="../src/assets/icons/logo.png"
+              src={logo}
               alt="New Bombay Painting"
               className="h-12"
             />
