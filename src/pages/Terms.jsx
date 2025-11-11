@@ -137,13 +137,13 @@ const Terms = () => {
                         </p>
                         <ul className="list-none mt-3 space-y-1">
                             <li>
-                                📧 <strong>Email:</strong> info@newbombaypainting.com
+                                📧 <strong>Email:</strong> newbombaypainting302@gmail.com
                             </li>
                             <li>
-                                📞 <strong>Phone:</strong> +91 9XXXXXXXXX
+                                📞 <strong>Phone:</strong> +91 9819584682
                             </li>
                             <li>
-                                🏠 <strong>Address:</strong> New Bombay Painting, Navi Mumbai,
+                                🏠 <strong>Address:</strong> New Bombay Painting, Mankhurd,
                                 Maharashtra, India
                             </li>
                         </ul>
