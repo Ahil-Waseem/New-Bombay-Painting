@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Ahil from "../assets/icons/Ahil.jpeg";
-import Waseem from "../assets/icons/waseem.png";
+import Waseem from "../assets/icons/Waseem.png";
 import { UserRound } from "lucide-react";
 
 
