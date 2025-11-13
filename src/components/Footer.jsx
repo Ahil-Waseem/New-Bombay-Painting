@@ -57,6 +57,11 @@ const Footer = ({ contactRef }) => {
           <h3 className="text-lg font-semibold text-yellow-400 mb-4">Support</h3>
           <ul className="space-y-2 text-gray-300">
             <li>
+              <a href="/services" className="hover:text-yellow-400 transition">
+                Services
+              </a>
+            </li>
+            <li>
               <a href="/about" className="hover:text-yellow-400 transition">
                 About
               </a>

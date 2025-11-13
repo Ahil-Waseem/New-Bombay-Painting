@@ -54,7 +54,7 @@ function ClientLogo() {
   ];
 
   return (
-    <section className="bg-black py-20 text-center">
+    <section className="bg-black py-0 text-center">
       {/* Section Title */}
       <div className="max-w-4xl mx-auto px-4 mb-12">
         <p className="text-lg tracking-widest uppercase text-yellow-500 mb-2">

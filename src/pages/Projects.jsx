@@ -6,8 +6,19 @@ import img3 from "../assets/images/img3.jpg";
 import img4 from "../assets/images/img4.jpg";
 import img5 from "../assets/images/img5.jpg";
 import img6 from "../assets/images/img6.jpg";
-import img7 from "../assets/images/img7.jpg";
-import img8 from "../assets/images/img8.jpg";
+// import img7 from "../assets/images/img7.jpg";
+// import img8 from "../assets/images/img8.jpg";
+import img9 from "../assets/images/paint1.png";
+import img10 from "../assets/images/paint2.jpg";
+import img11 from "../assets/images/paint3.jpg";
+import img12 from "../assets/images/polish1.jpg";
+import img13 from "../assets/images/polish2.jpg";
+import img14 from "../assets/images/polish3.jpg";
+import img15 from "../assets/images/texture1.jpg";
+import img16 from "../assets/images/texture2.jpg";
+import img17 from "../assets/images/texture3.jpg";
+
+
 
 // ✅ Import videos
 import video1 from "../assets/videos/video1.mp4";
@@ -47,8 +58,18 @@ const Projects = () => {
     img4,
     img5,
     img6,
-    img7,
-    img8,
+    // img7,
+    // img8,
+    img9,
+    img10,
+    img11,
+    img12,
+    img13,
+    img14,
+    img15,
+    img16,
+    img17,
+    
   ];
 
   // 🧠 Refs to control all video elements

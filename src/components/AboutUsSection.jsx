@@ -85,7 +85,12 @@ export default function AboutUsSection() {
             className="text-gray-300 text-lg md:text-xl max-w-3xl"
           >
             For three decades we’ve transformed homes, jewelry showrooms and luxury bungalows with precision, premium materials and unmatched attention to detail.
-            Our teams have completed projects across Mumbai, Thane, Lonavala, Khandala and neighbouring areas — delivering work for well-known jewelry showrooms and private residences, and servicing high-profile clients with complete discretion and trust.
+            Our teams have successfully completed projects not just across
+            <span className="text-yellow-500 font-semibold"> Mumbai</span>, <span className="text-blue-500 font-semibold">Lonavala</span>, <span className="text-red-500 font-semibold">Pune</span> & <span className="text-green-500 font-semibold">Khandala</span> but also in major cities like 
+            <span className="text-yellow-500 font-semibold"> Jamsedpur</span>,
+            <span className="text-blue-500 font-semibold"> Pune</span>,
+            <span className="text-yellow-500 font-semibold"> Nasik</span> and <span className="text-red-500 font-semibold">Hydrabad</span>. We  — delivering excellence and trust wherever we go.
+            From well-known jewelry showrooms to private residences, we continue to serve high-profile clients nationwide with complete discretion and quality.
           </motion.p>
 
           {/* Notable clients (subtle) */}
@@ -109,7 +114,7 @@ export default function AboutUsSection() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 flex-1">
               <Stat Icon={Award} number="30+" label="Years of Expertise" />
               <Stat Icon={CheckCircle} number="100%" label="Client Trust" />
-              {/* <Stat Icon={Users} number="500+" label="Projects Completed" /> */}
+               <Stat Icon={Users} number="300+" label="Workers" /> 
             </div>
 
             {/* <div className="flex-shrink-0">
