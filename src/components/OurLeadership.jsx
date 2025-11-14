@@ -51,7 +51,7 @@ const OurLeadership = () => {
             <div className="max-w-7xl mx-auto">
 
                 <h2
-                    className="text-5xl font-extrabold text-center text-yellow-400 mb-4 tracking-tight"
+                    className="text-3xl md:text-5xl font-extrabold text-center text-yellow-400 mb-4 tracking-tight"
                    
                 >
                     Meet Our Leadership

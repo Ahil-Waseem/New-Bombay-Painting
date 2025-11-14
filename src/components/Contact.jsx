@@ -41,7 +41,7 @@ const Contact = forwardRef((props, contactRef) => {
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         {/* LEFT — Info Section */}
         <div className="space-y-6">
-          <h2 className="text-5xl md:text-6xl font-extrabold text-yellow-400 leading-tight">
+          <h2 className="text-3xl md:text-6xl font-extrabold text-yellow-400 leading-tight">
             Let’s Build <br /> Something Great
           </h2>
           <p className="text-lg text-gray-300">

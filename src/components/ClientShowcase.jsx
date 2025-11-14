@@ -75,7 +75,7 @@ const Hierarchy = () => {
     return (
         <div className="pt-8 pb-12 px-4 md:px-10 bg-black">
 
-            <h1 className="text-4xl font-bold text-center mb-12 text-yellow-400">
+            <h1 className="text-3xl md:text-5xl font-bold text-center mb-12 text-yellow-400">
                 Places Where We Already Worked
             </h1>
 

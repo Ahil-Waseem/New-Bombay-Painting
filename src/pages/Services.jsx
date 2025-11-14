@@ -1,7 +1,7 @@
 import React from "react";
 
 import { motion } from "framer-motion";
-import lamination from "../assets/images/our-work3.png";
+import lamination from "../assets/images/lamination1.png";
 import polish from "../assets/images/our-work2.png";
 import paint from "../assets/images/our-work1.png";
 import interior from "../assets/images/interior.jpg"; // 👈 add your image

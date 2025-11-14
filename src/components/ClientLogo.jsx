@@ -60,7 +60,7 @@ function ClientLogo() {
         <p className="text-lg tracking-widest uppercase text-yellow-500 mb-2">
           Trusted By The Best
         </p>
-        <h3 className="text-4xl sm:text-5xl font-extrabold text-white">
+        <h3 className="text-3xl sm:text-5xl font-extrabold text-white">
           Our Recent Clients
         </h3>
       </div>

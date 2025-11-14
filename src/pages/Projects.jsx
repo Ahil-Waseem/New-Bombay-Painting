@@ -1,14 +1,13 @@
 import React, { useRef } from "react";
 import { Helmet } from "react-helmet";
-// import { motion } from "framer-motion";
+
+// Old gallery images
 import img1 from "../assets/images/img1.jpg";
 import img2 from "../assets/images/img2.jpg";
 import img3 from "../assets/images/img3.jpg";
 import img4 from "../assets/images/img4.jpg";
 import img5 from "../assets/images/img5.jpg";
 import img6 from "../assets/images/img6.jpg";
-// import img7 from "../assets/images/img7.jpg";
-// import img8 from "../assets/images/img8.jpg";
 import img9 from "../assets/images/paint1.png";
 import img10 from "../assets/images/paint2.jpg";
 import img11 from "../assets/images/paint3.jpg";
@@ -19,9 +18,32 @@ import img15 from "../assets/images/texture1.jpg";
 import img16 from "../assets/images/texture2.jpg";
 import img17 from "../assets/images/texture3.jpg";
 
+// New Painting
+import paint1 from "../assets/images/paint4.png";
+import paint2 from "../assets/images/paint5.png";
+import paint3 from "../assets/images/paint6.png";
 
+// New Polish
+import polish1 from "../assets/images/polish4.png";
+import polish2 from "../assets/images/polish5.png";
+import polish3 from "../assets/images/polish6.png";
 
-// ✅ Import videos
+// New Texture
+import texture1 from "../assets/images/texture4.png";
+import texture2 from "../assets/images/texture5.png";
+import texture3 from "../assets/images/texture6.png";
+
+// Lamination Images
+import lamination1 from "../assets/images/lamination1.png";
+import lamination2 from "../assets/images/lamination2.png";
+import lamination3 from "../assets/images/lamination3.png";
+
+// POP Images
+import pop1 from "../assets/images/pop1.png";
+import pop2 from "../assets/images/pop2.png";
+import pop3 from "../assets/images/pop3.png";
+
+// Videos
 import video1 from "../assets/videos/video1.mp4";
 import video2 from "../assets/videos/video2.mp4";
 import video3 from "../assets/videos/video3.mp4";
@@ -30,7 +52,7 @@ import video5 from "../assets/videos/video5.mp4";
 import video6 from "../assets/videos/video6.mp4";
 import video7 from "../assets/videos/video7.mp4";
 
-// ✅ Import cover images
+// Video covers
 import cover1 from "../assets/images/cover1.png";
 import cover2 from "../assets/images/cover2.png";
 import cover3 from "../assets/images/cover3.png";
@@ -39,10 +61,7 @@ import cover5 from "../assets/images/cover5.png";
 import cover6 from "../assets/images/cover6.png";
 import cover7 from "../assets/images/cover7.png";
 
-
-
 const Projects = () => {
-  // 🎥 Videos with cover images
   const videoGallery = [
     { src: video1, cover: cover1 },
     { src: video2, cover: cover2 },
@@ -53,32 +72,21 @@ const Projects = () => {
     { src: video7, cover: cover7 },
   ];
 
-  // 🖼️ Image gallery
   const imageGallery = [
-    img1,
-    img2,
-    img3,
-    img4,
-    img5,
-    img6,
-    // img7,
-    // img8,
-    img9,
-    img10,
-    img11,
-    img12,
-    img13,
-    img14,
-    img15,
-    img16,
-    img17,
-    
+    img1, img2, img3, img4, img5, img6,
+    img9, img10, img11,
+    img12, img13, img14,
+    img15, img16, img17,
   ];
 
-  // 🧠 Refs to control all video elements
+  const paintingGallery = [paint1, paint2, paint3];
+  const polishGallery = [polish1, polish2, polish3];
+  const textureGallery = [texture1, texture2, texture3];
+  const laminationGallery = [lamination1, lamination2, lamination3];
+  const popGallery = [pop1, pop2, pop3];
+
   const videoRefs = useRef([]);
 
-  // 🧩 Pause all other videos when one plays
   const handlePlay = (currentIndex) => {
     videoRefs.current.forEach((video, index) => {
       if (index !== currentIndex && video && !video.paused) {
@@ -88,64 +96,109 @@ const Projects = () => {
   };
 
   return (
-    <><Helmet>
-  <title>Projects Gallery – Painting, Texture & Polish Work | New Bombay Painting</title>
-  <meta name="description" content="Explore our project gallery showcasing expert home painting, texture designs, wood polish and interior work across Mumbai, Navi Mumbai & Thane. Premium quality guaranteed." />
-  <meta property="og:title" content="Our Project Gallery – New Bombay Painting" />
-  <meta property="og:description" content="See our painting, texture and polishing work done across premium homes, bungalows, hotels and commercial spaces in Mumbai & Navi Mumbai." />
-  <meta property="og:url" content="https://newbombaypainting.in/projects" />
-</Helmet>
-    <section className="bg-black text-white py-16 px-6 sm:px-12 lg:px-24">
-      <div className="max-w-7xl mx-auto text-center">
-        {/* Header */}
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-yellow-500 mb-10">
-          Our Project Gallery
-        </h1>
+    <>
+      <Helmet>
+        <title>Projects Gallery – Painting, Texture & Polish Work | New Bombay Painting</title>
+        <meta name="description" content="Explore our gallery showcasing painting, texture, polish, POP and lamination work." />
+      </Helmet>
 
-        <p className="text-gray-300 text-base sm:text-lg mb-14 max-w-3xl mx-auto">
-          Explore our painting projects — each one reflects our craftsmanship,
-          dedication, and attention to detail.
-        </p>
+      <section className="bg-black text-white py-16 px-6 sm:px-12 lg:px-24">
 
-        {/* 🎥 Video Gallery Section */}
-        <div className="mb-16">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-yellow-400 mb-6">
-            On-Site Reels & Work Videos
-          </h2>
+        {/* 🎨 Painting Gallery */}
+        <div className="mt-12">
+          <h2 className="text-3xl font-bold text-yellow-400 mb-3">Painting Work Gallery</h2>
+          <p className="text-gray-300 mb-6">
+            Explore premium interior and exterior painting work completed across high-end homes.
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {paintingGallery.map((img, i) => (
+              <div key={i} className="rounded-lg overflow-hidden shadow-lg hover:scale-105 transition">
+                <img src={img} className="w-full h-full object-cover" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ✨ Polish Gallery */}
+        <div className="mt-20">
+          <h2 className="text-3xl font-bold text-yellow-400 mb-3">Polish Work Gallery</h2>
+          <p className="text-gray-300 mb-6">
+            Glossy, matte and PU polish work for premium wood interiors.
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {polishGallery.map((img, i) => (
+              <div key={i} className="rounded-lg overflow-hidden shadow-lg hover:scale-105 transition">
+                <img src={img} className="w-full h-full object-cover" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* 🎭 Texture Gallery */}
+        <div className="mt-20">
+          <h2 className="text-3xl font-bold text-yellow-400 mb-3">Texture Work Gallery</h2>
+          <p className="text-gray-300 mb-6">
+            Modern texture finishes including metallic, stone, moroccan and more.
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {textureGallery.map((img, i) => (
+              <div key={i} className="rounded-lg overflow-hidden shadow-lg hover:scale-105 transition">
+                <img src={img} className="w-full h-full object-cover" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* 🪵 Lamination Gallery */}
+        <div className="mt-20">
+          <h2 className="text-3xl font-bold text-yellow-400 mb-3">Lamination Work Gallery</h2>
+          <p className="text-gray-300 mb-6">
+            Modern laminate finishes for wardrobes, wall panels and modular furniture.
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {laminationGallery.map((img, i) => (
+              <div key={i} className="rounded-lg overflow-hidden shadow-lg hover:scale-105 transition">
+                <img src={img} className="w-full h-full object-cover" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* 🏛 POP Gallery */}
+        <div className="mt-20 mb-20">
+          <h2 className="text-3xl font-bold text-yellow-400 mb-3">POP Work Gallery</h2>
+          <p className="text-gray-300 mb-6">
+            POP false ceilings, wall mouldings and premium interior designs.
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {popGallery.map((img, i) => (
+              <div key={i} className="rounded-lg overflow-hidden shadow-lg hover:scale-105 transition">
+                <img src={img} className="w-full h-full object-cover" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* 🎥 Videos */}
+        <div className="mb-14">
+          <h2 className="text-3xl font-semibold text-yellow-400 mb-6">On-Site Work Videos</h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {videoGallery.map((video, index) => (
-              <div
-                key={index}
-                className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg group hover:scale-[1.02] transition-transform duration-300"
-              >
-                {/* Cover Image */}
-                <img
-                  src={video.cover}
-                  alt={`Video Cover ${index + 1}`}
-                  className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-                />
+              <div key={index}
+                className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition">
 
-                {/* Play Icon Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-black/40 rounded-full p-4 opacity-80 group-hover:opacity-0 transition">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="white"
-                      viewBox="0 0 24 24"
-                      className="w-10 h-10"
-                    >
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </div>
+                <img src={video.cover} className="absolute inset-0 w-full h-full object-cover" />
 
-                {/* Video Player */}
                 <video
-                  ref={(el) => (videoRefs.current[index] = el)} // Store reference
+                  ref={(el) => (videoRefs.current[index] = el)}
                   controls
                   muted
-                  preload="metadata"
                   poster={video.cover}
                   onPlay={() => handlePlay(index)}
                   className="absolute inset-0 w-full h-full object-cover"
@@ -157,63 +210,19 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* 🖼️ Image Gallery Section */}
-        <div>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-yellow-400 mb-6">
-            Project Image Gallery
-          </h2>
+        {/* Old Project Images */}
+        <div className="mb-10">
+          <h2 className="text-3xl font-semibold text-yellow-400 mb-6">Project Image Gallery</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {imageGallery.map((img, index) => (
-              <div
-                key={index}
-                className="overflow-hidden rounded-lg shadow-md hover:scale-[1.03] transition-transform duration-300"
-              >
-                <img
-                  src={img}
-                  alt={`Project ${index + 1}`}
-                  className="w-full h-full object-cover"
-                />
+              <div key={index} className="rounded-lg overflow-hidden shadow-lg hover:scale-105 transition">
+                <img src={img} className="w-full h-full object-cover" />
               </div>
             ))}
           </div>
         </div>
 
-        {/* 🎯 CTA Banner Section */}
-        <div className="relative mt-20 bg-yellow-500 text-black py-16 px-6 sm:px-12 rounded-2xl shadow-2xl overflow-hidden">
-          {/* Background Video Overlay */}
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            src={video1} // ✅ imported file instead of relative path
-            className="absolute inset-0 w-full h-full object-cover opacity-20"
-          ></video>
-
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/50"></div>
-
-          {/* CTA Content */}
-          <div className="relative z-10 text-center max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-5xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg">
-              Transform Your Space Into a Masterpiece 🎨
-            </h2>
-
-            <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-              Our expert painters bring precision, passion, and perfection to
-              every wall. Let’s make your home as beautiful as your imagination!
-            </p>
-
-            <button
-              onClick={() => (window.location.href = "tel:+919819584682")}
-              className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-8 py-4 sm:px-10 sm:py-5 rounded-full text-lg sm:text-xl transition-all duration-300 shadow-lg hover:shadow-yellow-400/60"
-            >
-              📞 Get a Free Painting Quote Now
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 };
