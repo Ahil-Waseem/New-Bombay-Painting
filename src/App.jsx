@@ -30,9 +30,19 @@ import texture2 from "../src/assets/images/texture2.jpg";
 import texture3 from "../src/assets/images/texture3.jpg";
 import Hierarchy from "./components/ClientShowcase";
 
+import lamination1 from "../src/assets/images/lamination1.png";
+import lamination2 from "../src/assets/images/lamination2.png";
+import lamination3 from "../src/assets/images/lamination3.png";
+
+import pop1 from "../src/assets/images/pop1.png";
+import pop2 from "../src/assets/images/pop2.png";
+import pop3 from "../src/assets/images/pop3.png";
+
 const paintImages = [paint1, paint2, paint3];
 const polishImages = [polish1, polish2, polish3];
 const textureImages = [texture1, texture2, texture3];
+const laminationImages = [lamination1, lamination2, lamination3];
+const popImages = [pop1, pop2, pop3];
 
 
 function Home({ aboutRef, contactRef }) {
@@ -60,6 +70,17 @@ function Home({ aboutRef, contactRef }) {
         title="Modern Wall Texture Designs for Stylish Interiors"
         subtitle="Add personality to your walls with creative texture designs. Choose from stucco, marble, metallic, or rustic finishes that transform plain walls into elegant focal points — perfect for modern homes."
          images={textureImages} />
+      <GallerySlider
+        title="Premium Lamination Work – Stylish & Durable Finishes"
+        subtitle="Upgrade your interiors with high-quality laminate finishes. We offer glossy, matte, wooden and textured laminations that add elegance while protecting surfaces from scratches and moisture."
+        images={laminationImages}
+      />
+      <GallerySlider
+        title="POP False Ceiling & Wall Design – Modern & Elegant Interiors"
+        subtitle="Transform your home with premium POP (Plaster of Paris) work. From smooth false ceilings to detailed mouldings and wall designs — our POP craftsmanship gives your space a luxurious and durable finish."
+        images={popImages}
+      />
+
       <ClientLogo />
       {/* <AnimatedCards /> */}
     

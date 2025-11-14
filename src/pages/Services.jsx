@@ -7,6 +7,7 @@ import paint from "../assets/images/our-work1.png";
 import interior from "../assets/images/interior.jpg"; // 👈 add your image
 import texture from "../assets/images/texture.jpeg";   // 👈 add your image
 import HeroSection from "../components/HeroSection";
+import pop1 from "../assets/images/pop1.png"
 import { Helmet } from "react-helmet";
 // import wallpaper from "../assets/images/wallpaper.png"; // 👈 add your image
 
@@ -178,6 +179,42 @@ const Services = () => {
           <img src={texture} alt="Texture Polish" className="rounded-2xl shadow-xl w-full max-w-lg h-[400px] object-cover" />
         </motion.div>
       </div>
+
+        {/* 6️⃣ POP Work Section */}
+        <div className="flex flex-col-reverse md:flex-row items-center gap-10 mb-20">
+          <motion.div
+            className="md:w-1/2 flex justify-center"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            whileHover={{ scale: 1.05 }}
+          >
+            <img
+              src={pop1}
+              alt="POP Work"
+              className="rounded-2xl shadow-xl w-full max-w-lg h-[400px] object-cover"
+            />
+          </motion.div>
+
+          <motion.div
+            className="md:w-1/2"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <h2 className="text-4xl font-bold mb-4 text-yellow-400">
+              POP (Plaster of Paris) Work
+            </h2>
+            <p className="text-gray-300 leading-relaxed">
+              Upgrade your home interiors with our{" "}
+              <span className="text-yellow-400">professional POP work</span>.
+              We create smooth false ceilings, wall designs, cornices, and elegant
+              mouldings using high-quality materials. Our POP craftsmanship gives
+              your space a premium, durable, and luxurious look with perfect finishing.
+            </p>
+          </motion.div>
+        </div>
+
 
     
     </div>
