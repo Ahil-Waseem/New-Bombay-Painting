@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Helmet } from "react-helmet";
 // import { motion } from "framer-motion";
 import img1 from "../assets/images/img1.jpg";
 import img2 from "../assets/images/img2.jpg";
@@ -37,6 +38,8 @@ import cover4 from "../assets/images/cover4.png";
 import cover5 from "../assets/images/cover5.png";
 import cover6 from "../assets/images/cover6.png";
 import cover7 from "../assets/images/cover7.png";
+
+
 
 const Projects = () => {
   // 🎥 Videos with cover images
@@ -85,6 +88,13 @@ const Projects = () => {
   };
 
   return (
+    <><Helmet>
+  <title>Projects Gallery – Painting, Texture & Polish Work | New Bombay Painting</title>
+  <meta name="description" content="Explore our project gallery showcasing expert home painting, texture designs, wood polish and interior work across Mumbai, Navi Mumbai & Thane. Premium quality guaranteed." />
+  <meta property="og:title" content="Our Project Gallery – New Bombay Painting" />
+  <meta property="og:description" content="See our painting, texture and polishing work done across premium homes, bungalows, hotels and commercial spaces in Mumbai & Navi Mumbai." />
+  <meta property="og:url" content="https://newbombaypainting.in/projects" />
+</Helmet>
     <section className="bg-black text-white py-16 px-6 sm:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto text-center">
         {/* Header */}
@@ -204,6 +214,7 @@ const Projects = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
