@@ -52,7 +52,7 @@ const OurLeadership = () => {
 
                 <h2
                     className="text-5xl font-extrabold text-center text-yellow-400 mb-4 tracking-tight"
-                    style={{ textShadow: '0 0 10px rgba(252, 211, 77, 0.7)' }}
+                   
                 >
                     Meet Our Leadership
                 </h2>

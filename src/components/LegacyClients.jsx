@@ -39,7 +39,7 @@ const LegacyClients = () => {
 
                 {/* Subtitle / Introduction: White text */}
                 <p className="text-lg text-left md:text-center text-white mb-12 max-w-3xl mx-auto">
-                    Our founder began his journey in the [Year Range] and, through exceptional quality, had the honor of serving some of the most notable personalities in the Indian film and business industry.
+                    Our founder began his journey in the 1995 and, through exceptional quality, had the honor of serving some of the most notable personalities in the Indian film and business industry.
                 </p>
 
                 {/* Client Cards Grid */}

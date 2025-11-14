@@ -190,7 +190,7 @@ const FAQSection = () => {
 
   return (
     <>
-      <section className="pt-0 pb-16 md:pb-24 bg-black font-sans">
+      <section className="pt-10 pb-16 md:pb-24 bg-black font-sans">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-16">
