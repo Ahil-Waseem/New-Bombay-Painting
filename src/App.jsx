@@ -29,6 +29,7 @@ import texture1 from "../src/assets/images/texture1.jpg";
 import texture2 from "../src/assets/images/texture2.jpg";
 import texture3 from "../src/assets/images/texture3.jpg";
 import Hierarchy from "./components/ClientShowcase";
+import ServicesCTA from "./components/ServicesCTA";
 
 import lamination1 from "../src/assets/images/lamination1.png";
 import lamination2 from "../src/assets/images/lamination2.png";
@@ -85,6 +86,7 @@ function Home({ aboutRef, contactRef }) {
       {/* <AnimatedCards /> */}
     
     <Hierarchy/>
+      <ServicesCTA/>
       <FAQSection />
 
       <OurLeadership/>
