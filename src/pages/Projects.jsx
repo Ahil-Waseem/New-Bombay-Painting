@@ -17,6 +17,8 @@ import img14 from "../assets/images/polish3.jpg";
 import img15 from "../assets/images/texture1.jpg";
 import img16 from "../assets/images/texture2.jpg";
 import img17 from "../assets/images/texture3.jpg";
+import img18 from "../assets/images/img18.jpeg"
+import img19 from "../assets/images/img19.jpeg"
 
 // New Painting
 import paint1 from "../assets/images/paint4.png";
@@ -51,6 +53,7 @@ import video4 from "../assets/videos/video4.mp4";
 import video5 from "../assets/videos/video5.mp4";
 import video6 from "../assets/videos/video6.mp4";
 import video7 from "../assets/videos/video7.mp4";
+import video8 from "../assets/videos/video8.mp4";
 
 // Video covers
 import cover1 from "../assets/images/cover1.png";
@@ -70,13 +73,14 @@ const Projects = () => {
     { src: video5, cover: cover5 },
     { src: video6, cover: cover6 },
     { src: video7, cover: cover7 },
+    {src: video8, cover: cover2},
   ];
 
   const imageGallery = [
-    img1, img2, img3, img4, img5, img6,
+    img19, img1, img2, img3, img4, img5, img6,
     img9, img10, img11,
     img12, img13, img14,
-    img15, img16, img17,
+    img15, img16, img17, img18,
   ];
 
   const paintingGallery = [paint1, paint2, paint3];
@@ -211,7 +215,7 @@ const Projects = () => {
         </div>
 
         {/* Old Project Images */}
-        <div className="mb-10">
+        {/* <div className="mb-10">
           <h2 className="text-3xl font-semibold text-yellow-400 mb-6">Project Image Gallery</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {imageGallery.map((img, index) => (
@@ -220,7 +224,18 @@ const Projects = () => {
               </div>
             ))}
           </div>
+        </div> */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          {imageGallery.map((img, index) => (
+            <div
+              key={index}
+              className="rounded-lg overflow-hidden shadow-lg hover:scale-105 transition h-40 sm:h-48 lg:h-56"
+            >
+              <img src={img} className="w-full h-full object-cover" />
+            </div>
+          ))}
         </div>
+
 
       </section>
     </>
