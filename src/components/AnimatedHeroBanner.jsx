@@ -23,7 +23,7 @@ function AnimatedHeroBanner() {
             Trusted painters for<span className="text-green-400 font-semibold"> homes,</span> &amp; <span className="text-blue-400 font-semibold">business,</span> and commercial spaces across
             <span className="text-red-600 font-semibold"> Mumbai</span>,
             <span className="text-green-400 font-semibold"> Lonavala,</span>
-            <span className="text-yellow-500 font-semibold"> Pune</span>, and 
+            <span className="text-yellow-500 font-semibold"> Pune</span>, 
             &amp;
             <span className="text-blue-400 font-semibold"> all over India..
               </span>

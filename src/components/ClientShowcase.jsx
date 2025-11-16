@@ -15,16 +15,16 @@ const getGlowStyle = (rgb, intensity = 0.9) => {
 
 // Node Data
 const hierarchyData = [
-    { id: 1, name: "At Actors Home", name2: "Tiger Shroff, Jitender Kumar many more..", icon: Home, info: "All Enterior Works", level: 1, bgColor: "bg-yellow-600", glowColor: "253, 230, 138", iconColor: "text-white" },
-    { id: 2, name: "At Cricketor Home", name2: "Rohit Sharma", icon: Home, info: "All Enterior Works", level: 2, bgColor: "bg-red-600", glowColor: "239, 68, 68", iconColor: "text-white" },
-    { id: 3, name: "At TajMahal Hotel", name2: "Colaba Mumbai Hotel More Than 300 Rooms", icon: Home, info: "All Enterior Works", level: 2, bgColor: "bg-green-600", glowColor: "52, 211, 153", iconColor: "text-white" },
-    { id: 4, name: "At Hiranandani", name2: "Flats", icon: Home, info: "All Enterior Works", level: 2, bgColor: "bg-blue-600", glowColor: "96, 165, 250", iconColor: "text-white" },
-    { id: 5, name: "At Lodha Tower", name2: "Owner Banglows", icon: Home, info: "All Enterior Works", level: 3, bgColor: "bg-purple-600", glowColor: "192, 132, 252", iconColor: "text-white" },
-    { id: 6, name: "At Khandala Hills", name2: "Residential Banglows", icon: Home, info: "All Enterior Works", level: 3, bgColor: "bg-orange-600", glowColor: "251, 146, 60", iconColor: "text-white" },
-    { id: 7, name: "At Lokhandwala Hills", name2: "Residential Banglows", icon: Home, info: "All Enterior Works", level: 3, bgColor: "bg-pink-600", glowColor: "244, 114, 182", iconColor: "text-white" },
-    { id: 8, name: "At Machaan", name2: "Residential Machaan", icon: Home, info: "All Enterior Works", level: 3, bgColor: "bg-cyan-600", glowColor: "103, 232, 249", iconColor: "text-white" },
-    { id: 9, name: "At Hydrabad", name2: "Showrooms", icon: Home, info: "All Enterior Works", level: 3, bgColor: "bg-fuchsia-600", glowColor: "232, 121, 249", iconColor: "text-white" },
-    { id: 10, name: "At Jamsedpur", name2: "Showrooms", icon: Home, info: "All Enterior Works", level: 3, bgColor: "bg-lime-600", glowColor: "190, 242, 100", iconColor: "text-white" },
+    { id: 1, name: "At Actors Home", name2: "Tiger Shroff, Jitender Kumar many more..", icon: Home, info: "All Interior Works", level: 1, bgColor: "bg-yellow-600", glowColor: "253, 230, 138", iconColor: "text-white" },
+    { id: 2, name: "At Cricketor Home", name2: "Rohit Sharma", icon: Home, info: "All Interior Works", level: 2, bgColor: "bg-red-600", glowColor: "239, 68, 68", iconColor: "text-white" },
+    { id: 3, name: "At TajMahal Hotel", name2: "Colaba Mumbai Hotel More Than 300 Rooms", icon: Home, info: "All Interior Works", level: 2, bgColor: "bg-green-600", glowColor: "52, 211, 153", iconColor: "text-white" },
+    { id: 4, name: "At Hiranandani", name2: "Flats", icon: Home, info: "All Interior Works", level: 2, bgColor: "bg-blue-600", glowColor: "96, 165, 250", iconColor: "text-white" },
+    { id: 5, name: "At Lodha Tower", name2: "Owner Banglows", icon: Home, info: "All Interior Works", level: 3, bgColor: "bg-purple-600", glowColor: "192, 132, 252", iconColor: "text-white" },
+    { id: 6, name: "At Khandala Hills", name2: "Residential Banglows", icon: Home, info: "All Interior Works", level: 3, bgColor: "bg-orange-600", glowColor: "251, 146, 60", iconColor: "text-white" },
+    { id: 7, name: "At Lokhandwala Hills", name2: "Residential Banglows", icon: Home, info: "All Interior Works", level: 3, bgColor: "bg-pink-600", glowColor: "244, 114, 182", iconColor: "text-white" },
+    { id: 8, name: "At Machaan", name2: "Residential Machaan", icon: Home, info: "All Interior Works", level: 3, bgColor: "bg-cyan-600", glowColor: "103, 232, 249", iconColor: "text-white" },
+    { id: 9, name: "At Hydrabad", name2: "Showrooms", icon: Home, info: "All Interior Works", level: 3, bgColor: "bg-fuchsia-600", glowColor: "232, 121, 249", iconColor: "text-white" },
+    { id: 10, name: "At Jamsedpur", name2: "Showrooms", icon: Home, info: "All Interior Works", level: 3, bgColor: "bg-lime-600", glowColor: "190, 242, 100", iconColor: "text-white" },
 ];
 
 // Animation
