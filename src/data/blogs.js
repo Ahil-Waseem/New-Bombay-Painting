@@ -12,7 +12,7 @@ export const blogs = [
             "Choosing the right painting service in Mumbai can transform your home. Here’s a complete guide to selecting trusted and professional painters.",
         content: `
 
-      h2> 1. Why Choosing the Right Painting Service in Mumbai Matters</h2>
+      <h2> 1. Why Choosing the Right Painting Service in Mumbai Matters</h2>
 <p>
 When you search for <strong>painting services in Mumbai</strong>, you expect more than just wall color. 
 A professional <strong>painting contractor in Mumbai</strong> improves your home's appearance, protects the walls, 
