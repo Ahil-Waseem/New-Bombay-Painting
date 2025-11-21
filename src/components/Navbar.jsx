@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import logo from '../assets/icons/logo.png';
 
-function Navbar({ links, ctaText, aboutRef, contactRef }) {
+function Navbar({ links=[], ctaText, aboutRef, contactRef }) {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
@@ -117,11 +117,12 @@ function Navbar({ links, ctaText, aboutRef, contactRef }) {
 
             {/* ✅ Mobile Contact Button */}
             <button
+              
               onClick={handleContactClick}
               className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-all duration-300 shadow-lg inline-flex items-center gap-2"
             >
               <FontAwesomeIcon icon={faPhone} className="text-xl text-white" />
-              {ctaText}
+              {ctaText} 
             </button>
           </div>
         </div>

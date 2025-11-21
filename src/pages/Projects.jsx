@@ -34,6 +34,10 @@ import polish3 from "../assets/images/polish6.png";
 import texture1 from "../assets/images/texture4.png";
 import texture2 from "../assets/images/texture5.png";
 import texture3 from "../assets/images/texture6.png";
+import texture7 from "../assets/images/latest-work-texture1.jpeg"
+import texture4 from "../assets/images/latest-work-texture2.jpeg";
+import texture5 from "../assets/images/latest-work-texture3.jpeg";
+import texture6 from "../assets/images/latest-work-texture4.jpeg";
 
 // Lamination Images
 import lamination1 from "../assets/images/lamination1.png";
@@ -77,7 +81,7 @@ const Projects = () => {
   ];
 
   const imageGallery = [
-    img19, img1, img2, img3, img4, img5, img6,
+    img19, texture4, texture7, texture5, texture6, img1, img2, img3, img4, img5, img6,
     img9, img10, img11,
     img12, img13, img14,
     img15, img16, img17, img18,
@@ -85,7 +89,7 @@ const Projects = () => {
 
   const paintingGallery = [paint1, paint2, paint3];
   const polishGallery = [polish1, polish2, polish3];
-  const textureGallery = [texture1, texture2, texture3];
+  const textureGallery = [texture1, texture2, texture3, texture4, texture5, texture6, texture7];
   const laminationGallery = [lamination1, lamination2, lamination3];
   const popGallery = [pop1, pop2, pop3];
 
