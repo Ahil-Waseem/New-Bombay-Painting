@@ -15,6 +15,7 @@ import Terms from "./pages/Terms";
 
 import PopupVideo from "./components/PopupVideo";
 import PopupImages from "./components/PopupImages";
+import WhatsappButton from "./components/Whatsaap";
 
 function MainApp() {
     const aboutRef = useRef(null);
@@ -84,7 +85,7 @@ function MainApp() {
             }} />
 
             <PopupImages show={showImagePopup} onClose={() => setShowImagePopup(false)} />
-
+<WhatsappButton/>
             <Footer />
         </>
     );
