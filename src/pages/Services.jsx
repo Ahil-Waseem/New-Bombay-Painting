@@ -37,7 +37,7 @@ const Services = () => {
     <>
       <HeroSection />
 
-      <div className="bg-gray-900 text-white py-16 px-6 md:px-20 overflow-hidden">
+      <div className="bg-black text-white py-16 px-6 md:px-20 overflow-hidden">
         <Helmet>
           <title>
             Professional House Painting & Interior Services in Mumbai | New
@@ -83,6 +83,15 @@ const Services = () => {
               surfaces, we deliver perfection with Asian Paints, Nerolac, and
               Berger products.
             </p>
+
+            <h3 className="text-xl font-semibold mt-6 text-yellow-400">Why Choose Our Painting Services?</h3>
+            <ul className="list-disc ml-6 mt-2 text-gray-300">
+              <li>Trained professional painters</li>
+              <li>Dust-free clean process</li>
+              <li>High-quality paints</li>
+              <li>Affordable packages</li>
+            </ul>
+
           </motion.div>
 
           <motion.div
@@ -136,6 +145,12 @@ const Services = () => {
               finishes that enhance the durability and elegance of your
               interiors.
             </p>
+            <h3 className="text-xl font-semibold mt-6 text-yellow-400">Polish Work Benefits</h3>
+            <ul className="list-disc ml-6 mt-2 text-gray-300">
+              <li>Restores natural wood beauty</li>
+              <li>Scratch-resistant finish</li>
+              <li>Eco-friendly materials</li>
+            </ul>
           </motion.div>
         </div>
 
@@ -155,12 +170,15 @@ const Services = () => {
             </motion.h2>
 
             <p className="text-gray-300 leading-relaxed">
-              Enhance your furniture and décor with{" "}
-              <span className="text-yellow-400">modern lamination finishes</span>
-              . We offer glossy, matte, and textured laminations that protect
-              against moisture and scratches while giving your interiors a
-              stylish and lasting look.
+              We offer high-quality <span className="text-yellow-400">lamination finishes</span> for wardrobes, TV units, kitchen cabinets and wall panels.
+              Choose from glossy, matte, textured, acrylic and high-pressure laminates for a durable and stylish look.
             </p>
+            <h3 className="text-xl font-semibold mt-6 text-yellow-400">Why Choose Our Lamination?</h3>
+            <ul className="list-disc ml-6 text-gray-300 mt-2">
+              <li>Imported laminate sheets</li>
+              <li>Moisture & scratch resistant</li>
+              <li>Perfect edge finishing</li>
+            </ul>
           </motion.div>
 
           <motion.div
@@ -216,6 +234,13 @@ const Services = () => {
               functionality, comfort, and style to every corner of your home or
               office.
             </p>
+            <h3 className="text-xl font-semibold mt-6 text-yellow-400">We Specialize In:</h3>
+            <ul className="list-disc ml-6 text-gray-300 mt-2">
+              <li>Modular kitchens</li>
+              <li>Bedroom interiors</li>
+              <li>Living room makeovers</li>
+              <li>False ceilings</li>
+            </ul>
           </motion.div>
         </div>
 
@@ -242,6 +267,27 @@ const Services = () => {
               . Choose from metallic, marble, stone, and rustic textures to give
               your home an artistic and premium feel.
             </p>
+            <h3 className="text-xl font-semibold mt-6 text-yellow-400">
+              Popular Texture Designs We Offer
+            </h3>
+            <ul className="list-disc ml-6 text-gray-300 mt-2">
+              <li>Asian Paints Royale Play Metallic</li>
+              <li>Italian Marble / Stucco texture</li>
+              <li>Rustic stone & concrete texture</li>
+              <li>Designer 3D texture patterns</li>
+              <li>Crackle, Dapple, Safari & Fresco finishes</li>
+              <li>Luxury layer wall polishing</li>
+            </ul>
+            <h3 className="text-xl font-semibold mt-6 text-yellow-400">
+              Why Texture Painting is Trending in Mumbai?
+            </h3>
+            <p className="text-gray-300 mt-2">
+              With modern interior design evolving fast, Mumbai homeowners now prefer
+              texture painting over plain wall colours to create a premium, artistic look.
+              Texture walls are long-lasting, washable, and give a stunning hotel-style
+              finish that elevates the entire room atmosphere instantly.
+            </p>
+
           </motion.div>
 
           <motion.div
@@ -298,6 +344,7 @@ const Services = () => {
             </p>
           </motion.div>
         </div>
+        
       </div>
     </>
   );
