@@ -18,6 +18,7 @@ import PopupImages from "./components/PopupImages";
 import WhatsappButton from "./components/Whatsaap";
 
 
+
 // ✅ New Service Pages Import
 import InteriorPainting from "./pages/InteriorPainting";
 import ExteriorPainting from "./pages/ExteriorPainting";
@@ -27,8 +28,10 @@ import Lamination from "./pages/Lamination";
 import Wallpaper from "./pages/Wallpaper";
 import PopFalseCeiling from "./pages/POPFalseCeiling";
 import HomeRenovation from "./pages/HomeRenovation";
+import usePageTracking from "../usePageTracking";
 
 function MainApp() {
+    usePageTracking();
     const aboutRef = useRef(null);
     const contactRef = useRef(null);
     const location = useLocation();
