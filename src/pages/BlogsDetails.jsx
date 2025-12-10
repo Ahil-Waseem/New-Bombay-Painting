@@ -31,7 +31,7 @@ function BlogsDetails() {
                 <img
                     src={blog.image}
                     alt={blog.title}
-                    className="w-full h-80 md:h-[450px] object-cover rounded-2xl shadow-lg"
+                    className="w-full h-80 md:h-[500px] object-cover rounded-2xl shadow-lg"
                 />
             </div>
 
