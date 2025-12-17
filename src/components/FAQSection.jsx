@@ -227,6 +227,24 @@ const FAQSection = () => {
             </div>
 
           </div>
+          {/* Soft internal links for SEO (FAQ follow-up) */}
+          <p className="text-gray-400 text-center mt-12 max-w-3xl mx-auto">
+            Looking for more details about our work? Explore our{" "}
+            <a
+              href="/services"
+              className="text-yellow-400 underline hover:text-yellow-300 font-medium"
+            >
+              complete range of painting services
+            </a>{" "}
+            or take a look at our{" "}
+            <a
+              href="/projects"
+              className="text-yellow-400 underline hover:text-yellow-300 font-medium"
+            >
+              recently completed painting projects
+            </a>.
+          </p>
+
         </div>
       </section>
     </>

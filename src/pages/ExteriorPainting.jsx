@@ -99,8 +99,16 @@ const ExteriorPainting = () => {
               <span className="font-bold text-yellow-400">weatherproof painting solutions</span>.
               Whether it's a home, bungalow, society, or commercial building, our team ensures
               long-lasting durability, crack-free walls, and premium waterproof coating across{" "}
-              <strong>Mumbai, Navi Mumbai, Pune, Lonavala & nearby cities</strong>.
+              <strong>Mumbai, Navi Mumbai, Pune, Lonavala & nearby cities</strong>. For complete
+              indoor upgrades, you can also explore our{" "}
+              <a
+                href="/interior-painting"
+                className="text-yellow-400 underline hover:text-yellow-300 font-medium"
+              >
+                interior painting services
+              </a>.
             </p>
+
 
             {/* What We Offer */}
             <h2 className="text-3xl font-bold text-yellow-400 mb-4">What We Offer</h2>
@@ -145,6 +153,16 @@ const ExteriorPainting = () => {
               ⭐ <strong>Note:</strong> Final price varies according to the brand of paint, coating type, and wall repair depth.
               Contact us for a free site inspection & accurate estimate.
             </p>
+            <p className="text-gray-300 mt-6">
+              To understand the finish quality and durability, explore our{" "}
+              <a
+                href="/projects"
+                className="text-yellow-400 underline hover:text-yellow-300 font-medium"
+              >
+                completed exterior painting projects
+              </a>.
+            </p>
+
 
             {/* Our Process */}
             <h2 className="text-3xl font-bold text-yellow-400 mt-10 mb-4">Our Process</h2>
@@ -155,6 +173,19 @@ const ExteriorPainting = () => {
               <li>High-quality exterior paint application using modern tools</li>
               <li>Final protection coat + inspection + clean-up</li>
             </ol>
+
+            <h2 className="text-3xl font-bold text-yellow-400 mt-10 mb-4">Exterior Painting for All Types of Buildings</h2>
+            <p className="text-gray-300 leading-relaxed">
+              Our exterior painting services are suitable for residential buildings, housing societies, villas, bungalows, commercial complexes, schools, hotels, and office buildings. We understand that each structure faces different exposure to weather, moisture, and pollution, and we customize our materials and techniques accordingly to ensure maximum protection and visual appeal.
+            </p> 
+            <h2 className="text-3xl font-bold text-yellow-400 mt-10 mb-4">Exterior Painting Designed for Indian Weather Conditions</h2>
+            <p className="text-gray-300 leading-relaxed">
+              Mumbai and surrounding regions experience heavy rainfall, humidity, and strong sunlight. Our exterior painting systems are designed to withstand these conditions by using weather-resistant coatings, waterproof primers, and UV-protective paints that help prevent peeling, fading, and surface damage over time.
+            </p>
+            <h2 className="text-3xl font-bold text-yellow-400 mt-10 mb-4">Experienced Exterior Painting Contractors</h2>
+            <p className="text-gray-300 leading-relaxed">
+              With over 30 years of hands-on experience, New Bombay Painting has successfully completed exterior painting projects of varying sizes and complexities. Our trained painters follow safety guidelines, quality checks, and systematic execution to deliver consistent and reliable results on every project.
+            </p>
 
             {/* FAQs */}
             <h2 className="text-3xl font-bold text-yellow-400 mt-10 mb-4">FAQs</h2>

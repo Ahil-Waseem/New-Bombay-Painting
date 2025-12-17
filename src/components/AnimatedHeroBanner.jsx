@@ -56,8 +56,17 @@ function AnimatedHeroBanner() {
 
           <p className="text-lg text-gray-400 max-w-lg lg:max-w-none mx-auto lg:mx-0">
             At New Bombay Painting, we redefine walls with precision and artistry.
-            Whether it’s an elegant living room, a textured wall, or a full exterior revamp—our work speaks of quality that lasts.
+            Whether it’s an elegant living room, a textured wall, or a full exterior revamp,
+            explore our{" "}
+            <a
+              href="/services"
+              className="text-yellow-400 underline hover:text-yellow-300 font-medium"
+            >
+              professional painting services
+            </a>{" "}
+            designed to deliver quality that lasts.
           </p>
+
 
           <div className="mt-8">
             <button

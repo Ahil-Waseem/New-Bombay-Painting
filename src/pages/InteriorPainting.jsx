@@ -56,8 +56,16 @@ const InteriorPainting = () => {
                         <span className="font-bold text-yellow-400">30+ years of expertise</span>
                         , we ensure flawless finishes, smooth walls, perfect color
                         selection and long-lasting durability for homes across{" "}
-                        <strong>Mumbai, Lonavala, Pune & all over India</strong>.
+                        <strong>Mumbai, Lonavala, Pune & all over India</strong>. For complete
+                        property enhancement, you can also explore our{" "}
+                        <a
+                            href="/exterior-painting"
+                            className="text-yellow-400 underline hover:text-yellow-300 font-medium"
+                        >
+                            exterior painting services
+                        </a>.
                     </p>
+
 
                     {/* What We Offer */}
                     <h2 className="text-3xl font-bold text-yellow-400 mb-4">
@@ -94,6 +102,29 @@ const InteriorPainting = () => {
                         <li>Final finish inspection & handover</li>
                     </ol>
 
+                    <h2 className="text-3xl font-bold text-yellow-400 mt-10 mb-4">Interior Painting for Homes & Apartments in Mumbai</h2>
+                    <p className="text-gray-300 leading-relaxed">
+                        We specialize in interior painting for flats, apartments, bungalows, villas, and commercial interiors across Mumbai and nearby regions. Our team understands local climate conditions, wall types, and paint durability needs, ensuring long-lasting results in every project.
+                    </p>
+                    <h2 className="text-3xl font-bold text-yellow-400 mt-10 mb-4">Our Interior Painting Experience</h2>
+                    <p className="text-gray-300 leading-relaxed">
+                        Over the years, New Bombay Painting has completed interior painting projects for 1BHK, 2BHK, 3BHK flats, luxury bungalows, and commercial properties. From modern apartments to traditional homes, we adapt our techniques to suit every space and surface type.
+                    </p>
+                    <p className="text-gray-300 mt-4">
+                        You can view some of our completed residential and commercial work in our{" "}
+                        <a
+                            href="/projects"
+                            className="text-yellow-400 underline hover:text-yellow-300 font-medium"
+                        >
+                            interior painting projects gallery
+                        </a>.
+                    </p>
+
+                    <h2 className="text-3xl font-bold text-yellow-400 mt-10 mb-4">Trusted Interior Painters in Mumbai</h2>
+                    <p className="text-gray-300 leading-relaxed">
+                        Being a Mumbai-based painting contractor, we follow strict safety standards, clean-site practices, and timely completion. Our experienced painters ensure minimal disruption to your daily routine while delivering superior finish quality.
+                    </p>
+
                     {/* FAQs */}
                     <h2 className="text-3xl font-bold text-yellow-400 mt-10 mb-4">FAQs</h2>
                     <div className="space-y-5">
@@ -116,6 +147,17 @@ const InteriorPainting = () => {
                             </p>
                         </div>
                     </div>
+                    <p className="text-gray-300 mt-10">
+                        Looking for a complete range of painting solutions? Visit our{" "}
+                        <a
+                            href="/services"
+                            className="text-yellow-400 underline hover:text-yellow-300 font-medium"
+                        >
+                            services page
+                        </a>{" "}
+                        to explore all residential and commercial painting options.
+                    </p>
+
 
 {/* Bottom CTA */}
                     <div className="max-w-5xl mx-auto px-5 mt-16 text-center">
