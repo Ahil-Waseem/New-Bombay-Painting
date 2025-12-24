@@ -11,15 +11,15 @@ function Wallpaper() {
         <img
           src={bannerDesktop}
           alt="Wallpaper Installation Services in Mumbai"
-          className="hidden sm:block w-full h-full object-cover"
+          className="hidden sm:block w-full h-full object-fit-center"
         />
         <img
           src={bannerMobile}
           alt="Wallpaper Installation Services in Mumbai"
-          className="sm:hidden w-full h-full object-cover"
+          className="sm:hidden w-full h-full object-fit-center"
         />
 
-        <div className="absolute inset-0 bg-black/55 flex items-center">
+        <div className="absolute inset-0 bg-black/10 flex items-center">
           <div className="px-6 mt-20 md:px-26 max-w-4xl">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
               Wallpaper Installation Services in Mumbai
