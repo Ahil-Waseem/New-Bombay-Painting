@@ -68,7 +68,7 @@ export default function AboutUsSection() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* LEFT: Heading + story + CTA */}
         <div className="space-y-8">
-          <motion.h1
+          <motion.h2
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
@@ -76,7 +76,7 @@ export default function AboutUsSection() {
           >
             <span className="block text-yellow-400">New Bombay Painting</span>
             Trusted Painting, Interiors & Finishes — <span className="text-gray-300">Serving Mumbai & Beyond for 30 Years</span>
-          </motion.h1>
+          </motion.h2>
 
           <motion.p
             initial={{ opacity: 0 }}

@@ -75,9 +75,9 @@ const Hierarchy = () => {
     return (
         <div className="pt-8 pb-12 px-4 md:px-10 bg-black">
 
-            <h1 className="text-3xl md:text-5xl font-bold text-center mb-12 text-yellow-400">
+            <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 text-yellow-400">
                 Places Where We Already Worked
-            </h1>
+            </h2>
 
             {/* Perfect balanced grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 md:gap-y-12 gap-x-4 md:gap-x-8 max-w-7xl mx-auto">

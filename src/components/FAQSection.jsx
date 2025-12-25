@@ -27,9 +27,9 @@ const faqData = [
   },
   {
     id: 4,
-    question: "Will the painting process create a mess at my home?",
+    question: "Do you provide painting services near me?",
     answer:
-      "Our team follows a “Clean Work, Clean Finish” policy — covering furniture, cleaning surfaces daily, and ensuring your space stays neat. \nWe treat your home with the same care as ours.",
+      "Yes, we provide painting services across Mumbai, Navi Mumbai, Kharghar, Vashi, Nerul and nearby areas.",
   },
   {
     id: 5,
@@ -48,7 +48,12 @@ id: 7,
     question: "Are your clients satisfied with your services?",
     answer: "We’re proud to say that 100% of our clients are happy and recommend us to their friends and family.\nOur focus on quality, timely work, and transparent pricing keeps our clients coming back again and again.",
   },
-];
+    {
+id: 8,
+    question: "How people find you on internet?",
+    answer: "Many homeowners and businesses find us by searching for “painting services near me” because of our reliable work and local presence across Mumbai and Navi Mumbai.",
+  },
+];  
 
 // Individual FAQ item component
 const FAQItem = ({ question, answer, isOpen, onToggle }) => {
