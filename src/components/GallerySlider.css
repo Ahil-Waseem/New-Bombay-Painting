@@ -44,6 +44,14 @@
 .slide-image:hover {
     transform: scale(1.05);
 }
+.slide-link {
+  cursor: pointer;
+}
+
+.swiper-slide {
+  pointer-events: auto;
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

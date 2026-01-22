@@ -29,62 +29,118 @@ import pop1 from "../assets/images/pop1.png";
 import pop2 from "../assets/images/pop2.png";
 import pop3 from "../assets/images/pop3.png";
 
-const paintImages = [paint1, paint2, paint3];
-const polishImages = [polish1, polish2, polish3];
-const textureImages = [texture1, texture2, texture3];
-const laminationImages = [lamination1, lamination2, lamination3];
-const popImages = [pop1, pop2, pop3];
+/* ===== Images with ALT text ===== */
+
+const paintImages = [
+  { src: paint1,
+    alt: "Luxury interior wall painting service in Mumbai",
+    link: "/interior-painting" },
+  { src: paint2,
+    alt: "Professional home painting contractor at work",
+    link: "/interior-painting" },
+  { src: paint3,
+    alt: "Premium exterior painting for residential buildings",
+link: "/interior-painting" },
+];
+
+const polishImages = [
+  { src: polish1,
+    alt: "PU polish service for wooden furniture in Mumbai",
+link: "/wood-polish"  },
+  { src: polish2,
+    alt: "Melamine polish work for doors and cabinets",
+link: "/wood-polish"  },
+  { src: polish3,
+    alt: "High gloss wood polishing service by professionals",
+link: "/wood-polish"  },
+];
+
+const textureImages = [
+  { src: texture1,
+    alt: "Modern wall texture design for living room",
+link: "/texture-painting"  },
+  { src: texture2,
+    alt: "Luxury textured wall painting for interiors",
+link: "/texture-painting"  },
+  { src: texture3,
+    alt: "Creative wall texture work in Mumbai homes",
+link: "/texture-painting"  },
+];
+
+const laminationImages = [
+  { src: lamination1,
+    alt: "Premium wall lamination work for luxury interiors",
+link: "/lamination"  },
+  { src: lamination2,
+    alt: "Glossy and matte wall lamination design",
+link: "/lamination"  },
+  { src: lamination3,
+    alt: "Modern interior lamination finishing service",
+link: "/lamination"  },
+];
+
+const popImages = [
+  { src: pop1,
+    alt: "POP false ceiling design for modern homes",
+link: "/wallpaper"  },
+  { src: pop2, 
+    alt: "Decorative POP wall design work in Mumbai",
+link: "/wallpaper"  },
+  { src: pop3,
+    alt: "Luxury POP ceiling with LED lighting design",
+link: "/wallpaper"  },
+];
 
 function Home({ aboutRef, contactRef }) {
-    return (
-        <>
-            <AnimatedHeroBanner />
+  return (
+    <>
+      <AnimatedHeroBanner />
 
-            <div ref={aboutRef}>
-                <AboutUsSection />
-            </div>
+      <div ref={aboutRef}>
+        <AboutUsSection />
+      </div>
 
-            <LegacyClients />
+      <LegacyClients />
 
-            <GallerySlider
-                title="Premium Painting Services for Homes & Commercial Spaces"
-                subtitle="Experience flawless, vibrant and long-lasting finishes."
-                images={paintImages}
-            />
+      <GallerySlider
+        title="Premium Painting Services for Homes & Commercial Spaces"
+        subtitle="Experience flawless, vibrant and long-lasting finishes."
+        images={paintImages}
+      />
 
-            <GallerySlider
-                title="Expert Wood & Wall Polishing"
-                subtitle="Enhance natural beauty of wood & walls."
-                images={polishImages}
-            />
+      <GallerySlider
+        title="Expert Wood & Wall Polishing"
+        subtitle="Enhance natural beauty of wood & walls."
+        images={polishImages}
+      />
 
-            <GallerySlider
-                title="Modern Wall Texture Designs"
-                subtitle="Creative texture designs for stylish interiors."
-                images={textureImages}
-            />
+      <GallerySlider
+        title="Modern Wall Texture Designs"
+        subtitle="Creative texture designs for stylish interiors."
+        images={textureImages}
+      />
 
-            <GallerySlider
-                title="Premium Lamination Work"
-                subtitle="Luxury matte, glossy & textured laminations."
-                images={laminationImages}
-            />
+      <GallerySlider
+        title="Premium Lamination Work"
+        subtitle="Luxury matte, glossy & textured laminations."
+        images={laminationImages}
+      />
 
-            <GallerySlider
-                title="POP False Ceiling & Wall Design"
-                subtitle="Modern POP work with elegant finishes."
-                images={popImages}
-            />
+      <GallerySlider
+        title="POP False Ceiling & Wall Design"
+        subtitle="Modern POP work with elegant finishes."
+        images={popImages}
+      />
 
-            <ClientLogo />
-            <Hierarchy />
-            <ServicesCTA />
-            <FAQSection />
-            <OurLeadership />
+      <ClientLogo />
+      <Hierarchy />
+      <ServicesCTA />
+      <FAQSection />
+      <OurLeadership />
 
-            <Contact ref={contactRef} />
-        </>
-    );
+      <Contact ref={contactRef} />
+    </>
+  );
 }
 
 export default Home;
