@@ -1,9 +1,85 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import bannerDesktop from "../assets/images/interior-banner-lg.png";
 import bannerMobile from "../assets/images/interior-banner.png";
+import interiorVideo from "../assets/videos/homevideo.mp4";
 
 const InteriorPainting = () => {
     return (
+        <>
+           <Helmet>
+                <title>Interior Painting Services in Mumbai | Home & Apartment Painting Experts</title>
+                <meta
+                    name="description"
+                    content="Professional interior painting services in Mumbai, Navi Mumbai, Pune & Lonavala. Premium wall painting, texture finishes, eco-friendly paints & 30+ years of expertise by New Bombay Painting."
+                />
+
+                {/* Business Schema */}
+                <script type="application/ld+json">
+                    {`
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "New Bombay Painting",
+  "url": "https://newbombaypainting.in/interior-painting",
+  "logo": "https://newbombaypainting.in/assets/logo.png",
+  "image": "https://newbombaypainting.in/assets/interior-banner-lg.png",
+  "telephone": "+919819584682",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mumbai",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  },
+  "areaServed": [
+    "Mumbai",
+    "Navi Mumbai",
+    "Pune",
+    "Lonavala"
+  ],
+  "serviceType": "Interior Painting"
+}
+`}
+                </script>
+
+                {/* Interior Painting Service Schema */}
+                <script type="application/ld+json">
+                    {`
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Interior Painting Services",
+  "description": "Professional interior wall painting, texture finishes, designer walls and premium paint application for homes and apartments.",
+  "provider": {
+    "@type": "HomeAndConstructionBusiness",
+    "name": "New Bombay Painting"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Mumbai, Navi Mumbai, Pune, Lonavala"
+  }
+}
+`}
+                </script>
+
+                {/* Video Schema */}
+                <script type="application/ld+json">
+                    {`
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Interior Painting Projects by New Bombay Painting",
+  "description": "Watch real interior painting, texture work and premium wall finishes completed by New Bombay Painting across Mumbai and nearby regions.",
+  "thumbnailUrl": "https://newbombaypainting.in/assets/interior-banner-lg.png",
+  "uploadDate": "2024-12-20",
+  "contentUrl": "https://newbombaypainting.in/assets/videos/homevideo.mp4",
+  "embedUrl": "https://newbombaypainting.in/interior-painting"
+}
+`}
+                </script>
+            </Helmet>
+
+        
         <section className="bg-black text-white">
 
             {/* ---------- HERO TOP BANNER ---------- */}
@@ -40,6 +116,37 @@ const InteriorPainting = () => {
                     </h1>
                 </div>
             </div>
+            {/* ---------- SEO VIDEO SECTION (INDEXABLE) ---------- */}
+<section className="bg-black py-14 px-4 flex justify-center">
+  <div className="max-w-5xl w-full text-center">
+
+    <h2 className="text-2xl md:text-3xl font-bold text-yellow-400 mb-6">
+      Interior Painting Projects by New Bombay Painting
+    </h2>
+
+    <video
+      src={interiorVideo}
+      controls
+      preload="metadata"
+      className="
+        w-full 
+        max-w-4xl 
+        mx-auto 
+        rounded-xl 
+        shadow-lg
+        bg-black
+      "
+    />
+
+    <p className="text-gray-400 mt-5 leading-relaxed">
+      Watch real interior painting, texture work and premium wall finishes
+      completed by our expert painters for homes and apartments across
+      Mumbai, Navi Mumbai, Pune and nearby regions.
+    </p>
+
+  </div>
+</section>
+
 
             {/* ---------- BLOG STYLE CENTER CONTENT ---------- */}
             <div className="py-12 px-4 flex justify-center">
@@ -209,6 +316,7 @@ const InteriorPainting = () => {
                 </div>
             </div>
         </section>
+        </>
     );
 };
 

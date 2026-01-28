@@ -8,6 +8,8 @@ import ServicesCTA from "../components/ServicesCTA";
 import FAQSection from "../components/FAQSection";
 import OurLeadership from "../components/OurLeadership";
 import Contact from "../components/Contact";
+import HeroVideo from "../components/HeroVideo";
+import homeHeroVideo from "../assets/videos/homevideo.mp4"; 
 
 import paint1 from "../assets/images/paint1.png";
 import paint2 from "../assets/images/paint2.jpg";
@@ -94,6 +96,14 @@ link: "/wallpaper"  },
 function Home({ aboutRef, contactRef }) {
   return (
     <>
+    <HeroVideo
+  videoSrc={homeHeroVideo}
+  heading="New Bombay Painting"
+  subText="Premium Interior, Exterior, Texture & Polish Services"
+  btnText="Get Free Quote"
+  btnLink="#contact"
+/>
+
       <AnimatedHeroBanner />
 
       <div ref={aboutRef}>

@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+
 import { Helmet } from "react-helmet";   // ⭐ Helmet Added
 import bannerDesktop from "../assets/images/exterior-banner-lg.png";
-import bannerMobile from "../assets/images/exterior-banner.png";
+// import bannerMobile from "../assets/images/exterior-banner.png";
+import exteriorVideo from "../assets/videos/paintingvideo.mp4";
+
 
 const ExteriorPainting = () => {
+    const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
   return (
     <>
       {/* ------------------ SEO SCHEMA + META WITH HELMET ------------------ */}
@@ -58,15 +64,30 @@ const ExteriorPainting = () => {
                     }
                 `}
         </script>
+        <script type="application/ld+json">
+{`
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Exterior Painting Services in Mumbai",
+  "description": "Professional exterior painting, waterproof coating and weatherproof wall protection by New Bombay Painting.",
+  "thumbnailUrl": "https://newbombaypainting.in/assets/exterior-banner-lg.png",
+  "uploadDate": "2024-12-20",
+  "contentUrl": "https://newbombaypainting.in/assets/videos/paintingvideo.mp4",
+  "embedUrl": "https://newbombaypainting.in/exterior-painting"
+}
+`}
+</script>
+
       </Helmet>
 
       {/* ------------------ MAIN SECTION ------------------ */}
       <section className="bg-black text-white">
 
         {/* ---------- HERO TOP BANNER ---------- */}
-        <div className="relative w-full h-full sm:h-[260px] md:h-[360px] lg:h-[600px] overflow-hidden">
+        {/* <div className="relative w-full h-full sm:h-[260px] md:h-[360px] lg:h-[600px] overflow-hidden">
 
-          {/* Responsive Images */}
+       
           <img
             src={bannerDesktop}
             alt="Exterior Painting Services in Mumbai"
@@ -79,13 +100,46 @@ const ExteriorPainting = () => {
             className="sm:hidden w-full h-full object-cover object-[50%_50%]"
           />
 
-          {/* Light overlay */}
+         
           <div className="absolute inset-0 bg-black/20 flex items-center justify-center px-4">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-yellow-400 drop-shadow-lg text-center">
               Exterior Painting Services
             </h1>
           </div>
-        </div>
+        </div> */}
+
+        {/* ---------- HERO VIDEO BANNER (SEO INDEXABLE) ---------- */}
+<div className="relative w-full h-[240px] sm:h-[300px] md:h-[420px] lg:h-[700px] bg-black overflow-hidden">
+
+  {/* VIDEO */}
+  <video
+    ref={videoRef}
+    src={exteriorVideo}
+    controls
+    playsInline
+    preload="metadata"
+    poster={bannerDesktop}
+    className="w-full h-full object-cover bg-black"
+    onPlay={() => setIsPlaying(true)}
+  />
+
+  {/* Overlay + Heading */}
+  <div className="absolute inset-0 bg-black/30 flex items-center justify-center px-4 pointer-events-none">
+    <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-yellow-400 drop-shadow-lg text-center">
+      Exterior Painting Services In Mumbai
+    </h1>
+  </div>
+
+  {/* VISUAL PLAY BUTTON */}
+  {!isPlaying && (
+    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+      <div className="play-visual-btn">
+        ▶
+      </div>
+    </div>
+  )}
+
+</div>
 
         {/* ---------- BLOG STYLE CENTER CONTENT ---------- */}
         <div className="py-12 px-4 flex justify-center">
