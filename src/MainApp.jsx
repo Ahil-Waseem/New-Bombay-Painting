@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 
 import Navbar from "./components/Navbar";
@@ -17,9 +17,7 @@ import PopupVideo from "./components/PopupVideo";
 import PopupImages from "./components/PopupImages";
 import WhatsappButton from "./components/Whatsaap";
 
-
-
-// ✅ New Service Pages Import
+// ⭐ Service Pages
 import InteriorPainting from "./pages/InteriorPainting";
 import ExteriorPainting from "./pages/ExteriorPainting";
 import TexturePainting from "./pages/TexturePainting";
@@ -28,113 +26,131 @@ import Lamination from "./pages/Lamination";
 import Wallpaper from "./pages/Wallpaper";
 import PopFalseCeiling from "./pages/POPFalseCeiling";
 import HomeRenovation from "./pages/HomeRenovation";
+import PaintingServices from "./pages/PaintingServices";
+
 import usePageTracking from "../usePageTracking";
 
 function MainApp() {
-    usePageTracking();
-    const aboutRef = useRef(null);
-    const contactRef = useRef(null);
-    const location = useLocation();
+  usePageTracking();
 
-    const [showVideoPopup, setShowVideoPopup] = useState(false);
-    const [showImagePopup, setShowImagePopup] = useState(false);
-    // const navLinks = [
-    //     { name: "Home", path: "/" },
-    //     { name: "Services", path: "/services" },
-    //     { name: "Projects", path: "/projects" },
-    //     { name: "Blog", path: "/blog" },
-    //     { name: "About", path: "/about" },
-    // ];
-    const navLinks = [
-        { name: "Home", path: "/" },
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+  const location = useLocation();
 
-        {
-            name: "Services",
-            dropdown: [
-                { name: "Interior Painting", path: "/interior-painting" },
-                { name: "Exterior Painting", path: "/exterior-painting" },
-                { name: "Texture Painting", path: "/texture-painting" },
-                { name: "PU / Melamine Polish", path: "/wood-polish" },
-                { name: "Lamination & Furniture Polish", path: "/lamination" },
-                { name: "Wallpaper Installation", path: "/wallpaper" },
-                { name: "POP & False Ceiling", path: "/pop-false-ceiling" },
-                { name: "Full Home Renovation", path: "/home-renovation" },
-            ],
-        },
+  const [showVideoPopup, setShowVideoPopup] = useState(false);
+  const [showImagePopup, setShowImagePopup] = useState(false);
 
-        { name: "Projects", path: "/projects" },
-        { name: "Blog", path: "/blog" },
-        { name: "About", path: "/about" },
-    ];
+  /* ✅ OPTIMISED NAVBAR LINKS */
+  const navLinks = [
+    { name: "Home", path: "/" },
+    {
+      name: "Services",
+      dropdown: [
+        {name: "All Painting Services",  path: "/services/painting-services-mumbai" },
+        { name: "Interior Painting", path: "/services/interior-painting" },
+        { name: "Exterior Painting", path: "/services/exterior-painting" },
+        { name: "Texture Painting", path: "/services/texture-painting" },
+        { name: "PU / Melamine Polish", path: "/services/wood-polish" },
+        { name: "Lamination & Furniture Polish", path: "/services/lamination" },
+        { name: "Wallpaper Installation", path: "/services/wallpaper" },
+        { name: "POP & False Ceiling", path: "/services/pop-false-ceiling" },
+        { name: "Full Home Renovation", path: "/services/home-renovation" },
+      ],
+    },
+    { name: "Projects", path: "/projects" },
+    { name: "Blog", path: "/blog" },
+    { name: "About", path: "/about" },
+  ];
+
+  /* ✅ POPUP LOGIC (UNCHANGED) */
+  useEffect(() => {
+    if (location.pathname === "/") {
+      const startTimer = setTimeout(() => {
+        setShowVideoPopup(true);
+
+        const videoTimer = setTimeout(() => {
+          setShowVideoPopup(false);
+
+          const imageTimer = setTimeout(() => {
+            setShowImagePopup(true);
+          }, 5000);
+
+          return () => clearTimeout(imageTimer);
+        }, 15000);
+
+        return () => clearTimeout(videoTimer);
+      }, 5000);
+
+      return () => clearTimeout(startTimer);
+    } else {
+      setShowVideoPopup(false);
+      setShowImagePopup(false);
+    }
+  }, [location.pathname]);
+
+  return (
+    <>
+      <ScrollToTop />
+
+      <Navbar
+        links={navLinks}
+        ctaText="Contact Us"
+        aboutRef={aboutRef}
+        contactRef={contactRef}
+      />
+
+      <Routes>
+        {/* 🏠 CORE PAGES */}
+        <Route path="/" element={<Home aboutRef={aboutRef} contactRef={contactRef} />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogsDetails />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<Terms />} />
+
+        {/* 🧱 SERVICE DETAIL PAGES (SEO SILO) */}
+        <Route path="/services/interior-painting" element={<InteriorPainting />} />
+        <Route path="/services/exterior-painting" element={<ExteriorPainting />} />
+        <Route path="/services/texture-painting" element={<TexturePainting />} />
+        <Route path="/services/wood-polish" element={<WoodPolish />} />
+        <Route path="/services/lamination" element={<Lamination />} />
+        <Route path="/services/wallpaper" element={<Wallpaper />} />
+        <Route path="/services/pop-false-ceiling" element={<PopFalseCeiling />} />
+        <Route path="/services/home-renovation" element={<HomeRenovation />} />
+        <Route path="/services/painting-services-mumbai" element={<PaintingServices />}
+/>
 
 
+        {/* 🔁 OPTIONAL: OLD URL REDIRECTS (SEO SAFE) */}
+        <Route path="/interior-painting" element={<Navigate to="/services/interior-painting" />} />
+        <Route path="/exterior-painting" element={<Navigate to="/services/exterior-painting" />} />
+        <Route path="/texture-painting" element={<Navigate to="/services/texture-painting" />} />
+        <Route path="/wood-polish" element={<Navigate to="/services/wood-polish" />} />
+        <Route path="/lamination" element={<Navigate to="/services/lamination" />} />
+        <Route path="/wallpaper" element={<Navigate to="/services/wallpaper" />} />
+        <Route path="/pop-false-ceiling" element={<Navigate to="/services/pop-false-ceiling" />} />
+        <Route path="/home-renovation" element={<Navigate to="/services/home-renovation" />} />
+        
+      </Routes>
 
-    useEffect(() => {
-        if (location.pathname === "/") {
-            const startTimer = setTimeout(() => {
-                setShowVideoPopup(true);
+      <PopupVideo
+        show={showVideoPopup}
+        onClose={() => {
+          setShowVideoPopup(false);
+          setShowImagePopup(true);
+        }}
+      />
 
-                const videoTimer = setTimeout(() => {
-                    setShowVideoPopup(false);
+      <PopupImages
+        show={showImagePopup}
+        onClose={() => setShowImagePopup(false)}
+      />
 
-                    const imageTimer = setTimeout(() => {
-                        setShowImagePopup(true);
-                    }, 5000);
-
-                    return () => clearTimeout(imageTimer);
-                }, 15000);
-
-                return () => clearTimeout(videoTimer);
-            }, 5000);
-
-            return () => clearTimeout(startTimer);
-        } else {
-            setShowVideoPopup(false);
-            setShowImagePopup(false);
-        }
-    }, [location.pathname]);
-
-    return (
-        <>
-            <ScrollToTop />
-            <Navbar
-                links={navLinks}
-                ctaText="Contact Us"
-                aboutRef={aboutRef}
-                contactRef={contactRef}
-            />
-
-
-            <Routes>
-                <Route path="/" element={<Home aboutRef={aboutRef} contactRef={contactRef} />} />
-                <Route path="/services" element={<Services />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/blog/:slug" element={<BlogsDetails />} />
-                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-                <Route path="/terms" element={<Terms />} />
-
-                {/* ⭐ Service Routes */}
-                <Route path="/interior-painting" element={<InteriorPainting />} />
-                <Route path="/exterior-painting" element={<ExteriorPainting />} />
-                <Route path="/texture-painting" element={<TexturePainting />} />
-                <Route path="/wood-polish" element={<WoodPolish />} />
-                <Route path="/lamination" element={<Lamination />} />
-                <Route path="/wallpaper" element={<Wallpaper />} />
-                <Route path="/pop-false-ceiling" element={<PopFalseCeiling />} />
-                <Route path="/home-renovation" element={<HomeRenovation />} />
-            </Routes>
-
-            <PopupVideo show={showVideoPopup} onClose={() => {
-                setShowVideoPopup(false);
-                setShowImagePopup(true);
-            }} />
-
-            <PopupImages show={showImagePopup} onClose={() => setShowImagePopup(false)} />
-<WhatsappButton/>
-            <Footer />
-        </>
-    );
+      <WhatsappButton />
+      <Footer />
+    </>
+  );
 }
 
 export default MainApp;

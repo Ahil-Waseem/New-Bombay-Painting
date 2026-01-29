@@ -1,45 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- 🏠 Home -->
   <url>
     <loc>https://newbombaypainting.in/</loc>
   </url>
 
+  <!-- 🧱 Services Hub -->
   <url>
     <loc>https://newbombaypainting.in/services</loc>
   </url>
-  <url>
-  <loc>https://newbombaypainting.in/interior-painting</loc>
-</url>
-<url>
-<loc>https://newbombaypainting.in/exterior-painting</loc>
-</url>
-<url>
-<loc>https://newbombaypainting.in/texture-painting</loc>
-</url>
-<url>
-<loc>https://newbombaypainting.in/wood-polish</loc>
-</url>
-<url>
-<loc>
-https://newbombaypainting.in/lamination</loc>
-</url>
-<url><loc>
-https://newbombaypainting.in/wallpaper</loc></url>
 
+  <!-- 🎨 Service Detail Pages (NEW STRUCTURE) -->
+  <url>
+    <loc>https://newbombaypainting.in/services/interior-painting</loc>
+  </url>
+
+  <url>
+    <loc>https://newbombaypainting.in/services/exterior-painting</loc>
+  </url>
+
+  <url>
+    <loc>https://newbombaypainting.in/services/texture-painting</loc>
+  </url>
+
+  <url>
+    <loc>https://newbombaypainting.in/services/wood-polish</loc>
+  </url>
+
+  <url>
+    <loc>https://newbombaypainting.in/services/lamination</loc>
+  </url>
+
+  <url>
+    <loc>https://newbombaypainting.in/services/wallpaper</loc>
+  </url>
+
+  <url>
+    <loc>https://newbombaypainting.in/services/pop-false-ceiling</loc>
+  </url>
+
+  <url>
+    <loc>https://newbombaypainting.in/services/home-renovation</loc>
+  </url>
+
+  <!-- 🏗 Projects -->
   <url>
     <loc>https://newbombaypainting.in/projects</loc>
   </url>
 
+  <!-- 📝 Blog -->
   <url>
     <loc>https://newbombaypainting.in/blog</loc>
   </url>
 
-  <!-- Blog Posts -->
+  <!-- 📰 Blog Posts -->
   <url>
     <loc>https://newbombaypainting.in/blog/how-to-choose-best-painting-service-in-mumbai</loc>
   </url>
@@ -48,13 +65,15 @@ https://newbombaypainting.in/wallpaper</loc></url>
     <loc>https://newbombaypainting.in/blog/top-10-wall-texture-designs-2025</loc>
   </url>
 
-   <url>
+  <url>
     <loc>https://newbombaypainting.in/blog/lonavala-travel-guide-2025</loc>
   </url>
+
   <url>
-<loc>https://newbombaypainting.in/blog/painting-service-in-mumbai</loc>
-</url>
- 
+    <loc>https://newbombaypainting.in/blog/painting-service-in-mumbai</loc>
+  </url>
+
+  <!-- 📄 Legal -->
   <url>
     <loc>https://newbombaypainting.in/privacy-policy</loc>
   </url>
